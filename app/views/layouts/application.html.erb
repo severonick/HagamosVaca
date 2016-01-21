@@ -1,14 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Hagamosvaca</title>
+  <title>HagamosVaca</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigator">
+      <div class="container">
+        <a href="#" class="navbar-brand">HagamosVaca</a>
+        <ul class="nav navbar-nav">
+        <li class="active"> <%= link_to "status", statuses_path %></li>
+        </ul>
+    	
+    </div>
+  	
+  </div>
+	
+</div>
+
+
+<div class="container">
 <%= yield %>
+</div>
 
 </body>
 </html>
